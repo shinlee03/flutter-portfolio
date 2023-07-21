@@ -11,7 +11,7 @@ Animations used are all under the [*Lottie Simple License*](https://lottiefiles.
 All other necessary licenses will be put here.
 
 ## License
-Copyright 2023 Shin Lee
+Copyright 2023 © Shin Lee
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
