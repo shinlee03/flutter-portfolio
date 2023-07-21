@@ -6,7 +6,7 @@ My ultimate goal is to be able to make a site that looks good and is user-friend
 
 ## Licenses & Plugins
 
-Animations used are all under the [https://lottiefiles.com/page/license]*Lottie Simple License*.
+Animations used are all under the [https://lottiefiles.com/page/license](*Lottie Simple License*).
 
 All other necessary licenses will be put here.
 
