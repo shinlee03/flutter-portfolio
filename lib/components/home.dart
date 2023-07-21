@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:portfolio/components/contact.dart';
 
 class Home extends StatefulWidget {
@@ -8,25 +7,27 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> with TickerProviderStateMixin {
-  late final AnimationController _checkcontroller;
-
-  @override
-  initState() {
-    super.initState();
-    _checkcontroller = AnimationController(vsync: this);
-  }
-
-  @override
-  dispose() {
-    _checkcontroller.dispose();
-    super.dispose();
-  }
-
+class _HomeState extends State<Home> {
   @override
   build(BuildContext c) {
     return Scaffold(
-        appBar: null,
+        appBar: AppBar(leading: true, actions: [
+          IconButton(
+              icon: Icon(Icons.abc),
+              onPressed: () {
+                Navigator.of(c).push(MaterialPageRoute(
+                  builder: (c) => Scaffold(
+                      appBar: AppBar(
+                        actions: [
+                          IconButton(
+                              icon: Icon(Icons.arrow_back_ios),
+                              onPressed: () {}),
+                        ],
+                      ),
+                      body: Contact()),
+                ));
+              })
+        ]),
         body: Padding(
           padding: EdgeInsets.only(top: 70),
           child: Center(
@@ -36,7 +37,6 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
             Text("Welcome to Shin's Portfolio."),
-            Contact(),
           ])),
         ));
   }
