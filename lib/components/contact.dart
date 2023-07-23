@@ -51,6 +51,7 @@ class _contactState extends State<Contact> with TickerProviderStateMixin {
                   ..addStatusListener((status) {
                     if (status == AnimationStatus.completed) {
                       _checkcontroller.reset();
+                      Navigator.of(context).pop();
                     }
                   });
               },
